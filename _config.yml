@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ruicheng Wang 王瑞程"
+title                    : "Ruicheng Wang"
 title_separator          : "-"
 name                     : &name "Ruicheng"
 description              : &description "Ph.D. candidate @ University of Science and Technology of China"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Ruicheng Wang"
+  name             : "Ruicheng Wang (王瑞程)"
   avatar           : "bio-photo.jpg"
   bio              : ""
   location         : "Anhui, China"
