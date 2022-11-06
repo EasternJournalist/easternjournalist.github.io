@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Ruicheng Wang 王瑞程"
 title_separator          : "-"
 name                     : &name "Ruicheng"
-description              : &description "PhD candidate @ University of Science and Technology of China"
+description              : &description "Ph.D. candidate @ University of Science and Technology of China"
 url                      : https://easternjournalist.github.io/wangrc.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://easternjournalist.github.io/wangrc.github.io/"
@@ -115,6 +115,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  zhihu            : "https://www.zhihu.com/people/hongkongjournalist/posts"
 
 
 # Reading Files
@@ -209,15 +210,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -227,23 +219,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
