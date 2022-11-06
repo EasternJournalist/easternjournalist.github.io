@@ -3,7 +3,7 @@ title: "VirtualCube: An Immersive 3D Video Communication System"
 collection: publications
 permalink: /publication/virtualcube
 excerpt: 
-date: 
+date: 2021-12-00
 venue: 'VR2022 & IEEE TVCG'
 paperurl: 'https://arxiv.org/pdf/2112.06730.pdf'
 citation: ''
