@@ -29,10 +29,10 @@ Skills
 ======
 * Programming
   * C++ with a number of popular graphics & vision computing libraries/interfaces including Qt, ImGUI, OpenCV, Eigen and libtorch
-  * OpenGL Shader Language
+  * OpenGL API & Shader Language (with interfaces of C++ and Python)
   * C++ CUDA programming
   * Python with a number of popular machine learning and data science packages including Pytorch, Pandas.
-  * HTML & Javascript & Typescript for simple 
+  * HTML & Javascript & Typescript
 * 3D modeling
   * Blender, especially experienced in Blender Scripting 
   * Rhinos
@@ -73,7 +73,7 @@ Honors & Awards
 =====
 * 编程技能
   * C/C++ 一些流行的图形、视觉与数值计算与深度学习库的使用，如OpenCV, Eigen, libtorch, Qt
-  * OpenGL 着色器语言
+  * OpenGL 编程接口及着色器语言 (在 C++ 或 Python 中)
   * C++ CUDA编程
   * Python 深度学习、机器学习数据科学库的使用
   * HTML & JavaScript & Typescript
@@ -92,6 +92,6 @@ Honors & Awards
 奖项荣誉
 =====
   * 全国大学生数学建模比赛一等奖, *2019秋*
-  * CCF大数据与人工智能竞赛小组第六名, *2019秋*
+  * CCF大数据与人工智能竞赛赛题第六名, *2019秋*
   * 中国科学技术大学专项奖学金(王老吉奖学金), *Fall 2020*
   * 中国科学技术大学优秀学生奖学金(银奖), *Fall 2019*
