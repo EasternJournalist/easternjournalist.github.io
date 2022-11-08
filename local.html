@@ -1,11 +1,57 @@
+<style>
+    .collapsible {
+      background-color: #777;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      border-radius: 10px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #555;
+    }
+    
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+</style>
+
 <div style="display: flex; flex-flow: flex-start;">
-    <div style="margin: 10px; align-self: center;">
-        <img src="images/adampi.gif" style="width: 250px;">
+    <div style="margin: 10px; align-self: flex-start;">
+        <img src="images/adampi.gif" style="width: 300px;">
     </div>
-    <div>
+    <div style="align-self: flex-start;">
         <h3>Adam Piasecki</h3>
         <p>PhD Student</p>
+        <button class="collapsible">Open Section 1</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
         <p>University of Oxford</p>
-        <p>Department of Computer Science</p>
     </div>
 </div>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
