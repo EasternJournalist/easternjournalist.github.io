@@ -14,8 +14,8 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <div class="archive__item" style="display: flex; flex-flow: flex-start;">
-    <div class="archive__item-teaser" style="align-self: center;">
-      <img src="{{ post.teaser }}" style="width: 250px;">
+    <div class="archive__item-teaser" style="align-self: center; margin: 10px;">
+      <img src="{{ post.teaser }}" style="width: 250px !important;">
     </div>
     <div class="archive__item-content">
       <h3 class="archive__item-title" itemprop="headline">
@@ -33,7 +33,7 @@
           {% if post.collection == 'teaching' %}
             <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% elsif post.collection == 'publications' %}
-            <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+            <p> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% elsif post.date %}
            <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
           {% endif %}
@@ -44,7 +44,7 @@
       <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
       {% endif %}
       
-      <p> <b>Authors: </b>  {{ post.authors }} </p>
+      <p> {{ post.authors }} </p>
   
       {% if post.paper %}
         <a href=" {{ post.paper }} ">[Paper]</a>
