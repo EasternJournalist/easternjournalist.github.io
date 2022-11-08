@@ -39,7 +39,7 @@
 <div class="{{ include.type | default: "list" }}__item">
   <div class="archive__item" style="display: flex; flex-flow: flex-start; margin: 10px;">
     <div class="archive__item-teaser" style="align-self: flex-start; margin: 10px;">
-      <img src="{{ post.teaser }}" style="width: 250px;">
+      <img src="{{ post.teaser }}" style="width: 250px !important; height: auto !important;">
     </div>
     <div class="archive__item-content" style="align-self: flex-start;">
       <h3> {{ title }} </h3>
@@ -47,10 +47,7 @@
       <p> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
       
       <p> {{ post.authors }} </p>
-      <button class="collapsible">Abstract</button>
-      <div class="content">
-          <p>{{ post.abstract }}</p>
-      </div>
+
       {% if post.paper %}
         <a href=" {{ post.paper }} ">[Paper]</a>
       {% endif %}
