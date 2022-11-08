@@ -39,13 +39,13 @@ redirect_from:
 * Scientific computing softwares
   * Wolfram Mathematica
 
-# Publications
+## Publications
 
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-# Honors & Awards
+## Honors & Awards
 
   * First Price in Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM), *Fall 2019*
   * CCF Big Data & Computing Intelligence Contest, *Fall 2019*
