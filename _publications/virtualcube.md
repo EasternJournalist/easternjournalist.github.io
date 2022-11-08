@@ -5,6 +5,7 @@ permalink: /publication/virtualcube
 excerpt: 
 date: 2021-12-01
 venue: 'IEEE Conference on Virtual Reality and 3D User Interfaces (VR2022) (& IEEE TVCG) <b>(Best Journal Paper Award!)</b>'
+teaser: /images/virtualcube.gif
 authors: Yizhong Zhang*, Jiaolong Yang*, Zhen Liu, <b>Ruicheng Wang</b>, Guojun Chen, Xin Tong, Baining Guo.
 paper: https://arxiv.org/pdf/2112.06730.pdf
 arxiv: https://arxiv.org/pdf/2112.06730
