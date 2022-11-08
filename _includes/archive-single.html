@@ -11,37 +11,13 @@
 {% else %}
   {% assign title = post.title %}
 {% endif %}
-<style>
-  .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
-  
-  .content {
-      padding: 0 10px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-  }
-</style>
+
 <div class="{{ include.type | default: "list" }}__item">
-  <div class="archive__item" style="display: flex; flex-flow: flex-start; margin: 10px;">
-    <div class="archive__item-teaser" style="align-self: flex-start; margin: 10px; width: 250px; height: auto;">
+  <div class="archive__item" style="display: flex; flex-flow: flex-start; margin: 10px; align-items: flex-start;">
+    <div class="archive__item-teaser" style="margin: 10px; width: 25%; height: auto;">
       <img src="{{ post.teaser }}" style="width: 100%; height: auto;">
     </div>
-    <div class="archive__item-content" style="align-self: flex-start;">
+    <div class="archive__item-content" style="width: 75%;">
       <h3> {{ title }} </h3>
 
       <p> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
@@ -60,20 +36,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-              content.style.maxHeight = null;
-          } else {
-              content.style.maxHeight = content.scrollHeight + "px";
-          } 
-      });
-  }
-</script>
