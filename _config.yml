@@ -11,9 +11,9 @@ title                    : "Ruicheng Wang"
 title_separator          : "-"
 name                     : &name "Ruicheng"
 description              : &description "Ph.D. candidate @ University of Science and Technology of China"
-url                      : https://easternjournalist.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://wangrc.site # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://easternjournalist.github.io"
+repository               : "easternjournalist.github.io"
 teaser                   : "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
