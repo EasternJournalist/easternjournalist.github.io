@@ -13,7 +13,7 @@ name                     : &name "Ruicheng"
 description              : &description "Ph.D. candidate @ University of Science and Technology of China"
 url                      : https://wangrc.site # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "easternjournalist.github.io"
+repository               : "eaternjournalist/easternjournalist.github.io"
 teaser                   : "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
