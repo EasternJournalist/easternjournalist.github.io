@@ -19,7 +19,7 @@
         <img src="{{ post.teaser }}" style="width: 100%; height: auto;">
       {% endif %}
       {% if post.teaser_type == "video" %}
-        <video width="width: 100%;" controls> 
+        <video style="width: 100%;" autoplay loop muted playsinline> 
           <source src="{{ post.teaser }}" type="video/mp4">
         </video>
       {% endif %}
