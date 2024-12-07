@@ -15,7 +15,14 @@
 <div class="{{ include.type | default: "list" }}__item">
   <div class="archive__item" style="display: flex; flex-flow: flex-start; margin: 10px; align-items: flex-start;">
     <div class="archive__item-teaser" style="margin: 10px; width: 25%; height: auto; margin-top: 34px;">
-      <img src="{{ post.teaser }}" style="width: 100%; height: auto;">
+      {% if post.teaser_type == "image" %}
+        <img src="{{ post.teaser }}" style="width: 100%; height: auto;">
+      {% endif %}
+      {% if post.teaser_type == "video" %}
+        <video width="width: 100%;" controls> 
+          <source src="{{ post.teaser }}" type="video/mp4">
+        </video>
+      {% endif %}
     </div>
     <div class="archive__item-content" style="width: 75%;">
       <h3> {{ title }} </h3>

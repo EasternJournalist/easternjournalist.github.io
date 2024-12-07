@@ -5,6 +5,7 @@ permalink: /publication/moge
 excerpt: 
 date: 2024-10-28
 venue: 'arXiv preprint'
+teaser_type: image
 teaser: /images/moge.gif
 authors: "<b>Ruicheng Wang</b>, Sicheng Xu, Cassie Dai, Jianfeng Xiang, Yu Deng, Xin Tong, Jiaolong Yang"
 paper: https://arxiv.org/abs/2410.19115

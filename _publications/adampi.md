@@ -5,6 +5,7 @@ permalink: /publication/adampi
 excerpt: 
 date: 2022-08-01
 venue: 'ACM SIGGRAPH'
+teaser_type: image
 teaser: /images/adampi2.gif
 authors: "Yuxuan Han, <b>Ruicheng Wang</b>, Jiaolong Yang"
 paper: https://arxiv.org/pdf/2205.11733.pdf

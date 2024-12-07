@@ -5,6 +5,7 @@ permalink: /publication/diff3dedit
 excerpt: 
 date: 2024-09-21
 venue: '2024 European Conference on Computer Vision, ECCV 2024'
+teaser_type: image
 teaser: /images/diff-3d-edit.gif
 authors: "<b>Ruicheng Wang</b>, Jianfeng Xiang, Jiaolong Yang, Xin Tong"
 paper: https://arxiv.org/pdf/2403.11503
