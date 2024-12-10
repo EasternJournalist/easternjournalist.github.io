@@ -16,9 +16,9 @@
         <!-- Header Section -->
         <div class="row justify-content-center">
             <div class="col-md-3 text-center" style="max-width: 50%;">
-                <img src="static/images/bio-photo-crop-3.jpg" style="width: 80%;" alt="Avatar" class="avatar">
+                <img src="static/images/bio-photo-crop-3.jpg" style="width: 75%;" alt="Avatar" class="avatar">
             </div>
-            <div class="col-md-7" style=" max-width: 50%;">
+            <div class="col-md-7" style=" max-width: 80%;">
                 <div class="row">
                     <h3>Ruicheng Wang</h3>
                 </div>
@@ -43,380 +43,441 @@
                 </div>
                 <div class="row justify-content-start">
                     <i class="col-auto bi bi-github"></i>
-                    <div class="col"><a href="https://github.com/EasternJournalist">EasternJournalist@github.com</a></div>
+                    <div class="col"><a href="https://github.com/EasternJournalist">EasternJournalist@github.com</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row justify-content-center mt-5">
+        <!-- Bio Section -->
+        <div class="row justify-content-center mt-4">
             <div class="col-md-10">
-                Hi! I am currently a Ph.D. student at School of Computer Science and Technology, USTC, advised by Prof. <a
-                    href="http://staff.ustc.edu.cn/~gzsun/">Guanzhong Sun</a>.
+                Hi! I am currently a Ph.D. student at School of Computer Science and Technology, USTC, advised by Prof.
+                <a href="http://staff.ustc.edu.cn/~gzsun/">Guanzhong Sun</a>.
                 I have been a research intern in Microsoft Research Asia since July 2021,
                 working closely with Dr. <a href="https://jlyang.org/">Jiaolong Yang</a> and Prof. <a
-                    href="https://www.microsoft.com/en-us/research/people/xtong/">Xin Tong</a>.
+                    href="https://scholar.google.com/citations?user=P91a-UQAAAAJ&hl=en">Xin Tong</a>.
                 <br><br>
                 Now I am studying and exploring modern computer vision & graphics. My research directions includes
                 digital human body synthesis, virtual reality applications and generative 3D synthesis.
             </div>
         </div>
 
-        <!--   Navigation Bar
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-4">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs mt-4 sticky-top bg-light" id="mainTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#publications"
+                    type="button" role="tab" aria-controls="home" aria-selected="true">
+                    <h5>Publications</h5>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#publications"><h5>Publications</h5></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blogs">Blogs</a>
-                        </li>
-                    </ul>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#blogs" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    <h5>Blogs</h5>
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content mt-3" id="mainTabContent">
+
+            <!-- publications -->
+            <div class="tab-pane fade show active col" id="publications" role="tabpanel" aria-labelledby="home-tab">
+                <!-- Trellis -->
+                <div class="publication row">
+                    <div class="col-md-2 text-center">
+                        <video style="width: 100%;" playsinline autoplay loop muted>
+                            <source src="static/images/trellis.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <h5><b>Structured 3D Latents for Scalable and Versatile 3D Generation</b></h5>
+                        </div>
+                        <div class="row">
+                            <h6>Jianfeng Xiang, Zelong Lv, Sicheng Xu, Yu Deng, <b>Ruicheng Wang</b>, Bowen Zhang,
+                                Dong
+                                Chen, Xin Tong, Jiaolong Yang</h6>
+                        </div>
+                        <div class="row">
+                            <i>arXiv preprint, 2024</i>
+                        </div>
+                        <div class="row mt-2 g-2 text-start">
+                            <div class="col-auto">
+                                <a href="https://trellis3d.github.io/" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Webpage <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://arxiv.org/abs/2412.01506" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Paper <i class="bi bi-file-earmark"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://github.com/Microsoft/TRELLIS" class="btn btn-outline-primary"
+                                    role="button" target="_blank">
+                                    Code <i class="bi bi-github"></i> | <span class="star-count"
+                                        repo="Microsoft/TRELLIS"></span> <i class="bi bi-star-fill"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-outline-primary" data-bs-toggle="collapse"
+                                    href="#collapseTrellisAbstract" role="button" aria-expanded="false"
+                                    aria-controls="collapseTrellisAbstract">
+                                    Abstract <i class="bi bi-view-stacked"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse mt-3" id="collapseTrellisAbstract">
+                            <div class="col">
+                                We introduce a novel 3D generation method for versatile and high-quality 3D asset
+                                creation.
+                                The cornerstone is a unified Structured LATent (SLAT) representation which allows
+                                decoding
+                                to different output formats, such as Radiance Fields, 3D Gaussians, and meshes. This
+                                is
+                                achieved by integrating a sparsely-populated 3D grid with dense multiview visual
+                                features
+                                extracted from a powerful vision foundation model, comprehensively capturing both
+                                structural
+                                (geometry) and textural (appearance) information while maintaining flexibility
+                                during
+                                decoding. We employ rectified flow transformers tailored for SLAT as our 3D
+                                generation
+                                models and train models with up to 2 billion parameters on a large 3D asset dataset
+                                of 500K
+                                diverse objects. Our model generates high-quality results with text or image
+                                conditions,
+                                significantly surpassing existing methods, including recent ones at similar scales.
+                                We
+                                showcase flexible output format selection and local 3D editing capabilities which
+                                were not
+                                offered by previous models.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- MoGe -->
+                <div class="publication row p-2s">
+                    <div class="col-md-2 text-center">
+                        <video style="width: 100%;" playsinline autoplay loop muted>
+                            <source src="static/images/moge.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <h5><b>MoGe: Unlocking Accurate Monocular Geometry Estimation for Open-Domain Images
+                                    with Optimal Training Supervision</b></h5>
+                        </div>
+                        <div class="row">
+                            <h6><b>Ruicheng Wang</b>, Sicheng Xu, Cassie Dai, Jianfeng Xiang, Yu Deng, Xin Tong,
+                                Jiaolong Yang</h6>
+                        </div>
+                        <div class="row">
+                            <i>arXiv preprint, 2024</i>
+                        </div>
+                        <div class="row mt-2 g-2 text-start">
+                            <div class="col-auto">
+                                <a href="https://wangrc.site/MoGePage/" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Webpage <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://arxiv.org/abs/2410.19115" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Paper <i class="bi bi-file-earmark"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://github.com/microsoft/MoGe" class="btn btn-outline-primary"
+                                    role="button" target="_blank">
+                                    Code <i class="bi bi-github"></i> | <span class="star-count"
+                                        repo="microsoft/MoGe"></span> <i class="bi bi-star-fill"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-outline-primary" data-bs-toggle="collapse"
+                                    href="#collapseMoGeAbstract" role="button" aria-expanded="false"
+                                    aria-controls="collapseMoGeAbstract">
+                                    Abstract <i class="bi bi-view-stacked"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse mt-3" id="collapseMoGeAbstract">
+                            <div class="col">
+                                We present MoGe, a powerful model for recovering 3D geometry from monocular
+                                open-domain
+                                images. Given a single image, our model directly predicts a 3D point map of the
+                                captured
+                                scene with an affine-invariant representation, which is agnostic to true global
+                                scale and
+                                shift. This new representation precludes ambiguous supervision in training and
+                                facilitate
+                                effective geometry learning. Furthermore, we propose a set of novel global and local
+                                geometry supervisions that empower the model to learn high-quality geometry. These
+                                include a
+                                robust, optimal, and efficient point cloud alignment solver for accurate global
+                                shape
+                                learning, and a multi-scale local geometry loss promoting precise local geometry
+                                supervision. We train our model on a large, mixed dataset and demonstrate its strong
+                                generalizability and high accuracy. In our comprehensive evaluation on diverse
+                                unseen
+                                datasets, our model significantly outperforms state-of-the-art methods across all
+                                tasks
+                                including monocular estimation of 3D point map, depth map, and camera field of view.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Diff3DEdit -->
+                <div class="publication row p-2s">
+                    <div class="col-md-2 text-center">
+                        <video style="width: 100%;" playsinline autoplay loop muted>
+                            <source src="static/images/diff3dedit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <h5><b>Diffusion Models are Geometry Critics: Single Image 3D Editing Using Pre-Trained
+                                    Diffusion Priors</b></h5>
+                        </div>
+                        <div class="row">
+                            <h6><b>Ruicheng Wang</b>, Jianfeng Xiang, Jiaolong Yang, Xin Tong</h6>
+                        </div>
+                        <div class="row">
+                            <i>European Conference on Computer Vision (ECCV), 2024</i>
+                        </div>
+                        <div class="row mt-2 g-2 text-start">
+                            <div class="col-auto">
+                                <a href="https://wangrc.site/Diff3DEdit/" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Webpage <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://arxiv.org/abs/2403.11503" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Paper <i class="bi bi-file-earmark"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-outline-primary" data-bs-toggle="collapse"
+                                    href="#collapseDiff3DEditAbstract" role="button" aria-expanded="false"
+                                    aria-controls="collapseDiff3DEditAbstract">
+                                    Abstract <i class="bi bi-view-stacked"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse mt-3" id="collapseDiff3DEditAbstract">
+                            <div class="col">
+                                We propose a novel image editing technique that enables 3D manipulations on single
+                                images,
+                                such as object rotation and translation. Existing 3D-aware image editing approaches
+                                typically rely on synthetic multi-view datasets for training specialized models,
+                                thus
+                                constraining their effectiveness on open-domain images featuring significantly more
+                                varied
+                                layouts and styles. In contrast, our method directly leverages powerful image
+                                diffusion
+                                models trained on a broad spectrum of text-image pairs and thus retain their
+                                exceptional
+                                generalization abilities. This objective is realized through the development of an
+                                iterative
+                                novel view synthesis and geometry alignment algorithm. The algorithm harnesses
+                                diffusion
+                                models for dual purposes: they provide appearance prior by predicting novel views of
+                                the
+                                selected object using estimated depth maps, and they act as a geometry critic by
+                                correcting
+                                misalignments in 3D shapes across the sampled views. Our method can generate
+                                high-quality
+                                3D-aware image edits with large viewpoint transformations and high appearance and
+                                shape
+                                consistency with the input image, pushing the boundaries of what is possible with
+                                single-image 3D-aware editing.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- AdaMPI -->
+                <div class="publication row p-2">
+                    <div class="col-md-2 text-center">
+                        <img src="static/images/adampi2.gif" style="width: 100%;" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <h5><b>Single-View View Synthesis in the Wild with Learned Adaptive Multiplane
+                                    Images</b></h5>
+                        </div>
+                        <div class="row">
+                            <h6>Yuxuan Han, <b>Ruicheng Wang</b>, Jiaolong Yang</h6>
+                        </div>
+                        <div class="row">
+                            <i>ACM SIGGRAPH Conference, 2022</i>
+                        </div>
+                        <div class="row mt-2 g-2 text-start">
+                            <div class="col-auto">
+                                <a href="https://yxuhan.github.io/AdaMPI/" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Webpage <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://arxiv.org/pdf/2205.11733" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Paper <i class="bi bi-file-earmark"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://github.com/yxuhan/AdaMPI" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Code <i class="bi bi-github"></i> | <span class="star-count"
+                                        repo="yxuhan/AdaMPI"></span> <i class="bi bi-star-fill"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-outline-primary" data-bs-toggle="collapse"
+                                    href="#collapseAdaMPIAbstract" role="button" aria-expanded="false"
+                                    aria-controls="collapseAdaMPIAbstract">
+                                    Abstract <i class="bi bi-view-stacked"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse mt-3" id="collapseAdaMPIAbstract">
+                            <div class="col">
+                                This paper deals with the challenging task of synthesizing novel views for
+                                in-the-wild
+                                photographs. Existing methods have shown promising results leveraging monocular
+                                depth
+                                estimation and color inpainting with layered depth representations. However, these
+                                methods
+                                still have limited capability to handle scenes with complex 3D geometry. We propose
+                                a new
+                                method based on the multiplane image (MPI) representation. To accommodate diverse
+                                scene
+                                layouts in the wild and tackle the difficulty in producing high-dimensional MPI
+                                contents, we
+                                design a network structure that consists of two novel modules, one for plane depth
+                                adjustment and another for depth-aware color prediction. The former adjusts the
+                                initial
+                                plane positions using the RGBD context feature and an attention mechanism. Given
+                                adjusted
+                                depth values, the latter predicts the color and density for each plane separately
+                                with
+                                proper inter-plane interactions achieved via a feature masking strategy. To train
+                                our
+                                method, we construct large-scale stereo training data using only unconstrained
+                                single-view
+                                image collections by a simple yet effective warp-back strategy
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <!-- Virtual Cube -->
+                <div class="publication row p-2">
+                    <div class="col-md-2 text-center">
+                        <img src="static/images/virtualcube.gif" style="width: 100%;" alt="...">
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <h5><b>VirtualCube: An Immersive 3D Video Communication System</b></h5>
+                        </div>
+                        <div class="row">
+                            <h6>Yizhong Zhang*, Jiaolong Yang*, Zhen Liu, <b>Ruicheng Wang</b>, Guojun Chen, Xin
+                                Tong,
+                                Baining Guo.</h6>
+                        </div>
+                        <div class="row">
+                            <i>IEEE Conference on Virtual Reality and 3D User Interfaces (VR2022) (& IEEE TVCG)
+                                <b>(Best
+                                    Journal Paper Award)</b>, 2021</i>
+                        </div>
+                        <div class="row mt-2 g-2 text-start">
+                            <div class="col-auto">
+                                <a href="https://www.microsoft.com/en-us/research/project/virtualcube/"
+                                    class="btn btn-outline-primary" role="button" target="_blank">
+                                    Webpage <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://arxiv.org/abs/2112.06730" class="btn btn-outline-primary" role="button"
+                                    target="_blank">
+                                    Paper <i class="bi bi-file-earmark"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto">
+                                <a class="btn btn-outline-primary" data-bs-toggle="collapse"
+                                    href="#collapesVirutalCubeAbstract" role="button" aria-expanded="false"
+                                    aria-controls="collapesVirutalCubeAbstract">
+                                    Abstract <i class="bi bi-view-stacked"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row collapse mt-3" id="collapesVirutalCubeAbstract">
+                            <div class="col">
+                                The VirtualCube system is a 3D video conference system that attempts to overcomesome
+                                limitations of conventionaltechnologies. The key ingredient is VirtualCube, an abstract representation of a
+                                real-world
+                                cubicle instrumented with RGBD cameras
+                                for capturing the user's 3D geometry and texture. We design VirtualCube so that the
+                                task of
+                                data capturing is standardized and
+                                significantly simplified, and everything can be built using off-the-shelf hardware.
+                                We use
+                                VirtualCubes as the basic building blocks of a
+                                virtual conferencing environment, and we provide each VirtualCube user with a
+                                surrounding
+                                display showing life-size videos of remote
+                                participants. To achieve real-time rendering of remote participants, we develop the
+                                V-Cube
+                                View algorithm, which uses multi-view
+                                stereo for more accurate depth estimation and Lumi-Net rendering for better
+                                rendering
+                                quality. The VirtualCube system correctly
+                                preserves the mutual eye gaze between participants, allowing them to establish eye
+                                contact
+                                and be aware of who is visually paying
+                                attention to them. The system also allows a participant to have side discussions
+                                with remote
+                                participants as if they were in the same
+                                room. Finally, the system sheds lights on how to support the shared space of work
+                                items
+                                (e.g., documents and applications) and track
+                                participants' visual attention to work items
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+            </div>
+
+            <!-- blogs -->
+            <div class="tab-pane fade col" id="blogs" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="row text-center mt-4">
+                    <h5>Read my blog posts on <a href="https://www.zhihu.com/people/hongkongjournalist/posts"><img
+                                src="static/images/Zhihu_logo.svg" style="height: 80%;"></a></h5>
                 </div>
             </div>
-        </nav> -->
-
-        <div class="row mt-5">
-            <h3>Publications</h3>
         </div>
-        <hr>
 
-        <!-- Publications -->
-        <div id="publications" class="mt-4">
-
-            <!-- Trellis -->
-            <div class="publication row p-2s">
-                <div class="col-md-2 text-center">
-                    <video style="width: 100%;" playsinline autoplay loop muted>
-                        <source src="static/images/trellis.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <h5><b>Structured 3D Latents for Scalable and Versatile 3D Generation</b></h5>
-                    </div>
-                    <div class="row">
-                        <h6>Jianfeng Xiang, Zelong Lv, Sicheng Xu, Yu Deng, <b>Ruicheng Wang</b>, Bowen Zhang, Dong
-                            Chen, Xin Tong, Jiaolong Yang</h6>
-                    </div>
-                    <div class="row">
-                        <i>arXiv preprint, 2024</i>
-                    </div>
-                    <div class="row mt-4 text-start">
-                        <div class="col-auto">
-                            <a href="https://trellis3d.github.io/" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Webpage <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://arxiv.org/abs/2412.01506" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Paper <i class="bi bi-file-earmark"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://github.com/Microsoft/TRELLIS" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Code <i class="bi bi-github"></i> | <span id="star-count" repo="Microsoft/TRELLIS"></span> <i class="bi bi-star-fill"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseTrellisAbstract"
-                                role="button" aria-expanded="false" aria-controls="collapseTrellisAbstract">
-                                Show abstract <i class="bi bi-view-stacked"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row collapse mt-3" id="collapseTrellisAbstract">
-                        <div>
-                            We introduce a novel 3D generation method for versatile and high-quality 3D asset creation.
-                            The cornerstone is a unified Structured LATent (SLAT) representation which allows decoding
-                            to different output formats, such as Radiance Fields, 3D Gaussians, and meshes. This is
-                            achieved by integrating a sparsely-populated 3D grid with dense multiview visual features
-                            extracted from a powerful vision foundation model, comprehensively capturing both structural
-                            (geometry) and textural (appearance) information while maintaining flexibility during
-                            decoding. We employ rectified flow transformers tailored for SLAT as our 3D generation
-                            models and train models with up to 2 billion parameters on a large 3D asset dataset of 500K
-                            diverse objects. Our model generates high-quality results with text or image conditions,
-                            significantly surpassing existing methods, including recent ones at similar scales. We
-                            showcase flexible output format selection and local 3D editing capabilities which were not
-                            offered by previous models.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-
-            <!-- MoGe -->
-            <div class="publication row p-2s">
-                <div class="col-md-2 text-center">
-                    <video style="width: 100%;" playsinline autoplay loop muted>
-                        <source src="static/images/moge.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <h5><b>MoGe: Unlocking Accurate Monocular Geometry Estimation for Open-Domain Images with
-                                Optimal Training Supervision</b></h5>
-                    </div>
-                    <div class="row">
-                        <h6><b>Ruicheng Wang</b>, Sicheng Xu, Cassie Dai, Jianfeng Xiang, Yu Deng, Xin Tong, Jiaolong
-                            Yang</h6>
-                    </div>
-                    <div class="row">
-                        <i>arXiv preprint, 2024</i>
-                    </div>
-                    <div class="row mt-4 text-start">
-                        <div class="col-auto">
-                            <a href="https://wangrc.site/MoGePage/" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Webpage <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://arxiv.org/abs/2410.19115" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Paper <i class="bi bi-file-earmark"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://github.com/microsoft/MoGe" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Code <i class="bi bi-github"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseMoGeAbstract"
-                                role="button" aria-expanded="false" aria-controls="collapseMoGeAbstract">
-                                Show abstract <i class="bi bi-view-stacked"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row collapse" id="collapseMoGeAbstract">
-                        <div class="card card-body mt-2">
-                            We present MoGe, a powerful model for recovering 3D geometry from monocular open-domain
-                            images. Given a single image, our model directly predicts a 3D point map of the captured
-                            scene with an affine-invariant representation, which is agnostic to true global scale and
-                            shift. This new representation precludes ambiguous supervision in training and facilitate
-                            effective geometry learning. Furthermore, we propose a set of novel global and local
-                            geometry supervisions that empower the model to learn high-quality geometry. These include a
-                            robust, optimal, and efficient point cloud alignment solver for accurate global shape
-                            learning, and a multi-scale local geometry loss promoting precise local geometry
-                            supervision. We train our model on a large, mixed dataset and demonstrate its strong
-                            generalizability and high accuracy. In our comprehensive evaluation on diverse unseen
-                            datasets, our model significantly outperforms state-of-the-art methods across all tasks
-                            including monocular estimation of 3D point map, depth map, and camera field of view.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-
-            <!-- Diff3DEdit -->
-            <div class="publication row p-2s">
-                <div class="col-md-2 text-center">
-                    <video style="width: 100%;" playsinline autoplay loop muted>
-                        <source src="static/images/diff3dedit.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <h5><b>Diffusion Models are Geometry Critics: Single Image 3D Editing Using Pre-Trained
-                                Diffusion Priors</b></h5>
-                    </div>
-                    <div class="row">
-                        <h6><b>Ruicheng Wang</b>, Jianfeng Xiang, Jiaolong Yang, Xin Tong</h6>
-                    </div>
-                    <div class="row">
-                        <i>European Conference on Computer Vision (ECCV), 2024</i>
-                    </div>
-                    <div class="row mt-4 text-start">
-                        <div class="col-auto">
-                            <a href="https://wangrc.site/Diff3DEdit/" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Webpage <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://arxiv.org/abs/2403.11503" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Paper <i class="bi bi-file-earmark"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a class="btn btn-outline-primary" data-bs-toggle="collapse"
-                                href="#collapseDiff3DEditAbstract" role="button" aria-expanded="false"
-                                aria-controls="collapseDiff3DEditAbstract">
-                                Show abstract <i class="bi bi-view-stacked"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row collapse" id="collapseDiff3DEditAbstract">
-                        <div class="card card-body mt-2">
-                            We propose a novel image editing technique that enables 3D manipulations on single images,
-                            such as object rotation and translation. Existing 3D-aware image editing approaches
-                            typically rely on synthetic multi-view datasets for training specialized models, thus
-                            constraining their effectiveness on open-domain images featuring significantly more varied
-                            layouts and styles. In contrast, our method directly leverages powerful image diffusion
-                            models trained on a broad spectrum of text-image pairs and thus retain their exceptional
-                            generalization abilities. This objective is realized through the development of an iterative
-                            novel view synthesis and geometry alignment algorithm. The algorithm harnesses diffusion
-                            models for dual purposes: they provide appearance prior by predicting novel views of the
-                            selected object using estimated depth maps, and they act as a geometry critic by correcting
-                            misalignments in 3D shapes across the sampled views. Our method can generate high-quality
-                            3D-aware image edits with large viewpoint transformations and high appearance and shape
-                            consistency with the input image, pushing the boundaries of what is possible with
-                            single-image 3D-aware editing.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-
-            <!-- AdaMPI -->
-            <div class="publication row p-2">
-                <div class="col-md-2 text-center">
-                    <img src="static/images/adampi2.gif" style="width: 100%;" alt="...">
-                </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <h5><b>Single-View View Synthesis in the Wild with Learned Adaptive Multiplane Images</b></h5>
-                    </div>
-                    <div class="row">
-                        <h6>Yuxuan Han, <b>Ruicheng Wang</b>, Jiaolong Yang</h6>
-                    </div>
-                    <div class="row">
-                        <i>ACM SIGGRAPH Conference, 2022</i>
-                    </div>
-                    <div class="row mt-4 text-start">
-                        <div class="col-auto">
-                            <a href="https://yxuhan.github.io/AdaMPI/" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Webpage <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://arxiv.org/pdf/2205.11733" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Paper <i class="bi bi-file-earmark"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://github.com/yxuhan/AdaMPI" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Code <i class="bi bi-github"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseAdaMPIAbstract"
-                                role="button" aria-expanded="false" aria-controls="collapseAdaMPIAbstract">
-                                Show abstract <i class="bi bi-view-stacked"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row collapse" id="collapseAdaMPIAbstract">
-                        <div class="card card-body mt-2">
-                            This paper deals with the challenging task of synthesizing novel views for in-the-wild
-                            photographs. Existing methods have shown promising results leveraging monocular depth
-                            estimation and color inpainting with layered depth representations. However, these methods
-                            still have limited capability to handle scenes with complex 3D geometry. We propose a new
-                            method based on the multiplane image (MPI) representation. To accommodate diverse scene
-                            layouts in the wild and tackle the difficulty in producing high-dimensional MPI contents, we
-                            design a network structure that consists of two novel modules, one for plane depth
-                            adjustment and another for depth-aware color prediction. The former adjusts the initial
-                            plane positions using the RGBD context feature and an attention mechanism. Given adjusted
-                            depth values, the latter predicts the color and density for each plane separately with
-                            proper inter-plane interactions achieved via a feature masking strategy. To train our
-                            method, we construct large-scale stereo training data using only unconstrained single-view
-                            image collections by a simple yet effective warp-back strategy
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-            <!-- Virtual Cube -->
-            <div class="publication row p-2">
-                <div class="col-md-2 text-center">
-                    <img src="static/images/virtualcube.gif" style="width: 100%;" alt="...">
-                </div>
-                <div class="col-md-10">
-                    <div class="row">
-                        <h5><b>VirtualCube: An Immersive 3D Video Communication System</b></h5>
-                    </div>
-                    <div class="row">
-                        <h6>Yizhong Zhang*, Jiaolong Yang*, Zhen Liu, <b>Ruicheng Wang</b>, Guojun Chen, Xin Tong,
-                            Baining Guo.</h6>
-                    </div>
-                    <div class="row">
-                        <i>IEEE Conference on Virtual Reality and 3D User Interfaces (VR2022) (& IEEE TVCG) <b>(Best
-                                Journal Paper Award)</b>, 2021</i>
-                    </div>
-                    <div class="row mt-4 text-start">
-                        <div class="col-auto">
-                            <a href="https://www.microsoft.com/en-us/research/project/virtualcube/"
-                                class="btn btn-outline-primary" role="button" target="_blank">
-                                Webpage <i class="bi bi-box-arrow-up-right"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a href="https://arxiv.org/abs/2112.06730" class="btn btn-outline-primary" role="button"
-                                target="_blank">
-                                Paper <i class="bi bi-file-earmark"></i>
-                            </a>
-                        </div>
-                        <div class="col-auto">
-                            <a class="btn btn-outline-primary" data-bs-toggle="collapse"
-                                href="#collapesVirutalCubeAbstract" role="button" aria-expanded="false"
-                                aria-controls="collapesVirutalCubeAbstract">
-                                Show abstract <i class="bi bi-view-stacked"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row collapse" id="collapesVirutalCubeAbstract">
-                        <div class="card card-body mt-2">
-                            The VirtualCube system is a 3D video conference system that attempts to overcome some
-                            limitations of conventional
-                            technologies. The key ingredient is VirtualCube, an abstract representation of a real-world
-                            cubicle instrumented with RGBD cameras
-                            for capturing the user's 3D geometry and texture. We design VirtualCube so that the task of
-                            data capturing is standardized and
-                            significantly simplified, and everything can be built using off-the-shelf hardware. We use
-                            VirtualCubes as the basic building blocks of a
-                            virtual conferencing environment, and we provide each VirtualCube user with a surrounding
-                            display showing life-size videos of remote
-                            participants. To achieve real-time rendering of remote participants, we develop the V-Cube
-                            View algorithm, which uses multi-view
-                            stereo for more accurate depth estimation and Lumi-Net rendering for better rendering
-                            quality. The VirtualCube system correctly
-                            preserves the mutual eye gaze between participants, allowing them to establish eye contact
-                            and be aware of who is visually paying
-                            attention to them. The system also allows a participant to have side discussions with remote
-                            participants as if they were in the same
-                            room. Finally, the system sheds lights on how to support the shared space of work items
-                            (e.g., documents and applications) and track
-                            participants' visual attention to work items
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-        </div>
-        <!-- <div id="blogs" class="mt-4">
-            <h2>Blogs</h2>
-            <p>Your blog posts or articles will be displayed here.</p>
-        </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="static/js/index.js"></script>
 </body>
 
 </html>
